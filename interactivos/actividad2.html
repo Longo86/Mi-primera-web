@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Buscador de Smartphones</h1>
+  
+    <label for="marca">Marca:</label>
+    <input type="text" id="marcaInput">
+  
+    <label for="rangoPrecio">Rango de Precio:</label>
+    <select id="rangoPrecio">
+      <option value="0-200">0€ - 200€</option>
+      <option value="200-400">200€ - 400€</option>
+      <option value="400-600">400€ - 600€</option>
+      <option value="600-800">600€ - 800€</option>
+      <option value="800+">800€+</option>
+    </select>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script>
+      $(function() {
+        var marcasDisponibles = [
+          "Apple", "Samsung", "Xiaomi", "Huawei", "Google", "OnePlus", "LG", "Motorola"
+          // Puedes añadir más marcas aquí
+        ];
+        
+        $("#marcaInput").autocomplete({
+          source: marcasDisponibles
+        });
+      });
+    </script>
+</body>
+</html>
