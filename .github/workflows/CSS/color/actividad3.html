@@ -28,8 +28,21 @@
             font-style: italic;
             color: grey;
         }
-        .p2 {font-size: 100%;}
+        .p2 {font-size: 100%;
+            border-bottom: 1.5px solid #ccc;
+            padding-bottom: 5px; /* Ajusta la longitud de la línea más corta */
+            margin-bottom: 10px;
+        
+        }
         .p1 {
+            font-size: 90%;
+            color: black; 
+            font-weight: normal;
+            border-bottom: 1.5px solid #ccc;
+            padding-bottom: 10px;
+            margin-bottom: 10px
+        }
+        .p4 {
             font-size: 90%;
             color: black; 
             font-weight: normal;
@@ -41,17 +54,24 @@
             width: 100%;
             color: grey;
         }
+        .gray-fondo {
+            background-color: #f2f2f2;
+            padding: 15px; /* Ajusta el relleno según sea necesario */
+            margin-top: 15px; /* Añade espacio entre el contenido y el fondo gris */
+            display: inline-block;
+        }
         </style>
 </head>
 <body>
     <h2><span class="inicio">SIMPLEST</span><strong>BLOG</strong></h2>
 
-<p class="p2">   
-Hi, I'm <span class="resalto">Stefano Longo</span>, a Frontend Engineer. <br>
+<p class="p2">  
+Hi, I'm <span class="resalto">Stefano Longo</span>, a Frontend Engineer.<br>
 Enthusiast perfomance, responsive design and usability, always looking for <br>
 the best project and good cofee. --<span class="text-red">about me</span>
 </p>
 <p> 
+    <div class="gray-fondo">
     <h2><span class="text-gris">Writing..</span></h2>
     <p class="p1">
 <span class="text-italic">Dec 10, 2015</span> - <span class="text-red">Welcome to Jekyll!</span> - Velit mollitia exercitationem est possimus impedit <br>
@@ -71,11 +91,12 @@ eos minus sint est dolorem sunt facilis veniam praesentium voluptate ut ut delec
     eos minus sint est dolorem sunt facilis veniam praesentium voluptate ut ut delectus... <span class="text-red">Read more</span></p>
     </p>
 
-<p class="p1">
+<p class="p4">
     <span class="text-italic">Dec 10, 2015</span> - <span class="text-red">Welcome to Jekyll!</span> - Velit mollitia exercitationem est possimus impedit <br>
     quia molestiae et expedita eius magni nesciunt maxime repellendus aut praesentium et repellendus <br>
     eos minus sint est dolorem sunt facilis veniam praesentium voluptate ut ut delectus... <span class="text-red">Read more</span></p>
     </p>
+</div>
 
     <footer>
         <p> 2024 Stefano Longo | Simplest Blog</p>
