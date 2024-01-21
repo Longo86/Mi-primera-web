@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat HTML</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .chat-container {
+      width: calc(100% - 40px);
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .message {
+      clear: both;
+      overflow: hidden;
+      margin-bottom: 10px;
+      background-color: #e6f7ff;
+      border-radius: 15px;
+      padding: 10px;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .avatar {
+      border-radius: 50%;
+      margin-right: 10px;
+      overflow: hidden;
+      width: 40px;
+      height: 40px;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .message-content {
+      overflow: hidden;
+      flex: 1;
+    }
+
+    .sender-name {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .message-date {
+      font-size: 12px;
+      color: #888;
+    }
+
+    .message-left {
+      text-align: left;
+    }
+
+    .message-right {
+      text-align: right;
+      margin-left: auto;
+    }
+
+    .message-right .avatar {
+      float: right;
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="message message-left">
+      <div class="avatar">
+        <img src="/CSS/imágenes/avatar1.jpg" alt="Avatar 1">
+      </div>
+      <div class="message-content">
+        <div class="sender-name">Stefano Longo</div>
+        <p>Lo siento pero nuestra relación no puede seguir, debemos dejar de vernos. Te deseo lo mejor.</p>
+        <div class="message-date">10 de enero de 2024 - 16:35</div>
+      </div>
+    </div>
+
+    <div class="message message-right">
+      <div class="message-content">
+        <div class="sender-name">Scarlett Johansson</div>
+        <p>Please don't leave me; I'll never find a better lover than you. You are the love of my life. If you wish, I'll give up my career for you.</p>
+        <div class="message-date">10 de enero de 2024 - 16:40</div>
+      </div>
+      <div class="avatar">
+        <img src="/CSS/imágenes/avatar2.jpg" alt="Avatar 2">
+      </div>
+    </div>
+  </div>
+
+  <div class="chat-container">
+    <div class="message message-left">
+      <div class="avatar">
+        <img src="/CSS/imágenes/avatar1.jpg" alt="Avatar 1">
+      </div>
+      <div class="message-content">
+        <div class="sender-name">Stefano Longo</div>
+        <p>El problema no eres tú, soy yo.. Adiós.</p>
+        <div class="message-date">10 de enero de 2024 - 16:45</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
