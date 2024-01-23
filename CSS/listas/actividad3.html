@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectángulos con la Palabra "Productos"</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .rectangulo {
+            width: 200px;
+            height: 100px;
+            background-color: #67b7af;
+            border: 2px solid #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 40px;
+            transition: background-color 0.3s; /* Añadida transición para suavizar el cambio de color */
+        }
+
+        .rectangulo:hover {
+            background-color: #2980b9; /* Cambio de color de fondo al pasar el cursor sobre el rectángulo */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contenedor">
+        <div class="rectangulo">Productos</div>
+        <div class="rectangulo">Carrito</div>
+        <div class="rectangulo">Perfil</div>
+    </div>
+
+</body>
+</html>
