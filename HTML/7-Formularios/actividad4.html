@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Búsqueda de Cámaras de Fotos</h2>
+
+    <form action="/buscar_camara.php" method="get">
+        <label for="marca">Marca:</label>
+        <select id="marca" name="marca">
+          <option value="Canon">Canon</option>
+          <option value="Nikon">Nikon</option>
+          <option value="Sony">Sony</option>
+          <option value="Fujifilm">Fujifilm</option>
+          <option value="Panasonic">Panasonic</option>
+          <option value="Olympus">Olympus</option>
+          <option value="Leica">Leica</option>
+          <option value="Samsung">Samsung</option>
+          <option value="Pentax">Pentax</option>
+          <option value="Hasselblad">Hasselblad</option>
+        </select><br><br>
+      
+        <label for="modelo">Modelo:</label>
+        <input type="text" id="modelo" name="modelo" required><br><br>
+      
+        <label for="resolucion">Resolución mínima (en megapíxeles):</label>
+        <input type="number" id="resolucion" name="resolucion" min="1" required><br><br>
+      
+        <label for="tipo_sensor">Tipo de sensor:</label>
+        <select id="tipo_sensor" name="tipo_sensor">
+          <option value="CMOS">CMOS</option>
+          <option value="CCD">CCD</option>
+          <option value="APS-C">APS-C</option>
+        </select><br><br>
+      
+        <label for="precio_max">Precio máximo:</label>
+        <input type="number" id="precio_max" name="precio_max" min="1" required><br><br>
+      
+        <input type="submit" value="Buscar">
+      </form>
+
+</body>
+<a href="../index.html">Index</a>
+</html>
