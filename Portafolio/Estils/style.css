@@ -72,16 +72,16 @@ section.skills {
     position: fixed;
     top: 50%;
     right: 0;
-    transform: translate(300%, -50%);
+    transform: translateX(300%) translateY(-25%);
     padding: 20px;
     background-color: black;
     color: white;
     width: 250px;
     height: 70vh;
     overflow-y: auto;
-    overflow-x: hidden; /* Para ocultar la barra de desplazamiento horizontal */
-   /* Ajusta según sea necesario para superponer sobre otros elementos */
+    overflow-x: hidden;
 }
+
 
 
 section.skills h2 {
@@ -95,11 +95,11 @@ section.skills meter {
 
 section.skills label {
     display: flex;
-    align-items: center; /* Centra la imagen verticalmente */
+    align-items: center;
 }
 
 section.skills img {
-    margin-right: 8px; /* Ajusta el margen derecho según sea necesario */
-    max-width: 30px; /* Ajusta el ancho máximo de la imagen según sea necesario */
-    max-height: 30px; /* Ajusta la altura máxima de la imagen según sea necesario */
+    margin-right: 8px;
+    max-width: 30px;
+    max-height: 30px; 
 }
