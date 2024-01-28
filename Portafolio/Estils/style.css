@@ -16,18 +16,24 @@ nav {
     width: 100%;
 }
 
-nav a {
-    color: white;
+.barra a {
+    color: orange;
     margin: 0 15px;
     font-size: 18px;
     text-decoration: none;
+    width: 100px;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: font-size 0.3s ease; 
+    vertical-align: middle;/* Agrega transición para el cambio de tamaño de fuente */
 }
 
-nav a:hover {
-    color: orange;
-    transition: color 0.3s ease;
-    transform: scale(1.5);
+.barra a:hover {
+    font-size: 22px;
+    vertical-align: middle;
 }
+
+
 
 .contacto {
     background-color: #ff6600;
@@ -102,4 +108,16 @@ section.skills img {
     margin-right: 8px;
     max-width: 30px;
     max-height: 30px; 
+}
+
+.circulo-naranja {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-65%, -50%);
+    width: 500px;
+    height: 350px;
+    background-color:orange;
+    border-radius: 50%;
+    z-index: -1;
 }
