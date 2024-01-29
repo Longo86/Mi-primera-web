@@ -22,7 +22,7 @@ nav {
     margin: 0 15px;
     font-size: 18px;
     text-decoration: none;
-    width: 100px;
+    width: 180px;
     box-sizing: border-box;
     display: inline-block;
     transition: font-size 0.3s ease; 
@@ -30,7 +30,7 @@ nav {
 }
 
 .barra a:hover {
-    font-size: 22px;
+    font-size: 20px;
     vertical-align: middle;
 }
 
@@ -47,7 +47,7 @@ nav {
 
 .container {
     max-width: 1200px;
-    margin: 20px auto; 
+    margin: 100px auto; 
     text-align: center;
     color: white;
 }
@@ -67,7 +67,7 @@ section img {
 
 section.skills {
     position: fixed;
-    top: 50%;
+    top: 40%;
     right: 0;
     transform: translateX(300%) translateY(-25%);
     padding: 20px;
@@ -171,4 +171,13 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 13px;
+}
+
+.main-text{
+    margin: 200px auto;
+    text-align: justify;
+    color: white;
+    width: 900px;
+    float: left;
+    font-style: italic;
 }
