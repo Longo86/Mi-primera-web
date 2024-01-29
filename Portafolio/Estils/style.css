@@ -121,3 +121,14 @@ section.skills img {
     border-radius: 50%;
     z-index: -1;
 }
+.cerrar-contacto {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    border: none; /* Agrega este estilo para quitar el borde del botón */
+}

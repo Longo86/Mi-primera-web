@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/Portafolio/Estils/style.css">
+    <title>Stefano Longo | Programador</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            max-width: 400px;
+            margin: 70px auto;
+            color: white;
+            text-align: left;
+            margin-right: 300px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            margin: 100;
+           
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            color: black;
+        }
+        input[type="submit"] {
+            background-color: orange;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            opacity: 0.7;;
+        }
+  
+        .contacto2 {
+            max-width: 600px;
+            margin: 220px 200px;
+            text-align: left; 
+            color: white;
+        }
+        strong {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <section>
+<div class="contacto2">
+    <h2>Datos de contacto</h2>
+    <p><strong>Email:</strong>  slongo@inscaparrella.cat</p>
+    <p><strong>Teléfono:</strong>    603349614</p>
+    <p><strong>Dirección</strong>   Av. Exercit nº 44 bis, 25194, Lleida</p>
+</div>
+    </section>
+    <h2></h2>
+    <form action="/enviar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+<footer>
+    <div>
+            Stefano Longo | 2024 All Rights Reserved. Privacy Policy
+    </div>
+</footer>
+</html>
