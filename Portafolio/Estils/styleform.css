@@ -7,6 +7,7 @@ body {
     align-items: center;
 }
 
+
 nav {
     background-color: #333;
     padding: 15px;
@@ -51,77 +52,9 @@ nav {
     text-align: center;
     color: white;
 }
-
-section {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    margin: 20px;
+body {
+    font-family: Arial, sans-serif;
 }
-
-section img {
-    max-width: 100%;
-    max-height: auto;
-}
-
-
-section.skills {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateX(300%) translateY(-25%);
-    padding: 20px;
-    background-color: black;
-    color: white;
-    width: 250px;
-    height: 70vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-
-section.skills h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-section.skills meter {
-    width: 100%;
-}
-
-section.skills label {
-    display: flex;
-    align-items: center;
-}
-
-section.skills img {
-    margin-right: 8px;
-    max-width: 30px;
-    max-height: 30px; 
-}
-
-.circulo-naranja {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-65%, -50%);
-    width: 500px;
-    height: 350px;
-    background-color:orange;
-    border-radius: 50%;
-    z-index: -1;
-}
-.cerrar-contacto {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    display: block;
-    width: fit-content;
-    border: none; /* Agrega este estilo para quitar el borde del botón */
-}
-
 form {
     max-width: 400px;
     margin: 90px auto;
@@ -152,14 +85,25 @@ input[type="submit"]:hover {
 }
 
 .contacto2 {
+    max-width: 600px;
+    margin: 220px 200px;
     text-align: left; 
     color: white;
-    margin: 200px auto;
-    margin-left: 150px;
+}
+strong {
+    color: orange;
 }
 
-.contacto2 h2, strong{
-    color: orange;
+section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+}
+
+section img {
+    max-width: 100%;
+    max-height: auto;
 }
 
 footer {
@@ -171,4 +115,16 @@ footer {
     bottom: 0;
     width: 100%;
     font-size: 13px;
+}
+
+.cerrar-contacto {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    border: none; /* Agrega este estilo para quitar el borde del botón */
 }
