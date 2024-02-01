@@ -180,4 +180,41 @@ footer {
     width: 900px;
     float: left;
     font-style: italic;
+    position: fixed;
+    line-height: 1,6;
 }
+
+#redes-sociales{
+    color:black;
+    text-decoration: none;
+    margin: 300 100;
+    width: 20%;
+    text-align: left;
+    line-height: 3.5;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 40px;
+}
+
+
+#redes-sociales ul{
+    border-left: 50px;
+    background-color: blue;}
+
+.lista-redes-sociales a {
+text-decoration: none;
+color: white;
+text-align:initial;
+align-items: center;
+padding: 15px;
+display: flex;
+justify-content: space-between;
+position: fixed;
+}
+
+.lista-redes-sociales img {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+   }
+ 
