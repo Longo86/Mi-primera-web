@@ -15,6 +15,7 @@ nav {
     align-items: center; 
     width: 100%;
     position: fixed;
+    border: 1.5px solid orange;
 }
 
 .barra a {
@@ -162,16 +163,9 @@ input[type="submit"]:hover {
     color: orange;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    font-size: 13px;
-}
+
+
+/* Apartado sobre mí */
 
 .main-text{
     margin: 200px auto;
@@ -184,37 +178,52 @@ footer {
     line-height: 1,6;
 }
 
+
+/* Apartado redes sociales */
+
 #redes-sociales{
-    color:black;
-    text-decoration: none;
-    margin: 300 100;
-    width: 20%;
+    background-color: #453d3d;
+    width: 30%;
+    height: 30%;
     text-align: left;
-    line-height: 3.5;
-    align-items: center;
+    line-height: 2.5;
+    border-radius: 20px;
+    position: relative;
+    top: 130px;
+    left: 0px;
+    border: 1.5px solid orange;
+    padding: 20px;
     box-sizing: border-box;
-    border-radius: 40px;
 }
 
-
-#redes-sociales ul{
-    border-left: 50px;
-    background-color: blue;}
-
-.lista-redes-sociales a {
-text-decoration: none;
-color: white;
-text-align:initial;
-align-items: center;
-padding: 15px;
-display: flex;
-justify-content: space-between;
-position: fixed;
+#redes-sociales a {
+    color: white;
+    text-decoration: none;
+   
+    
 }
 
-.lista-redes-sociales img {
+#redes-sociales img{
     width: 45px;
     height: 45px;
-    margin-right: 20px;
-   }
- 
+    margin-top: 10px;
+    margin-left: 20px; 
+    vertical-align: bottom;
+}
+
+
+
+
+/* Apartado pie de página */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    border: 1.5px solid orange;
+}
