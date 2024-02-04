@@ -7,6 +7,7 @@ body {
     align-items: center;
 }
 
+                                        /* Barra de navegación */
 nav {
     background-color: #333;
     padding: 15px;
@@ -27,7 +28,7 @@ nav {
     box-sizing: border-box;
     display: inline-block;
     transition: font-size 0.3s ease; 
-    vertical-align: middle;/* Agrega transición para el cambio de tamaño de fuente */
+    vertical-align: middle;
 }
 
 .barra a:hover {
@@ -39,13 +40,13 @@ nav {
 .contacto {
     background-color: #ff6600;
     color: white;
-  
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     margin-right: 10px;
 }
 
+                                        /* Foto + Presentación inicial WEB */
 .container {
     max-width: 1200px;
     margin: 100px auto; 
@@ -65,6 +66,18 @@ section img {
     max-height: auto;
 }
 
+.circulo-naranja {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-65%, -50%);
+    width: 500px;
+    height: 350px;
+    background-color:orange;
+    border-radius: 50%;
+    z-index: -1;
+}
+                                        /* Cuadro de competencias */
 
 section.skills {
     position: fixed;
@@ -100,17 +113,7 @@ section.skills img {
     max-height: 30px; 
 }
 
-.circulo-naranja {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-65%, -50%);
-    width: 500px;
-    height: 350px;
-    background-color:orange;
-    border-radius: 50%;
-    z-index: -1;
-}
+                                        /* Apartado Contacto */
 .cerrar-contacto {
     background-color: #333;
     color: white;
@@ -120,9 +123,9 @@ section.skills img {
     margin-top: 10px;
     display: block;
     width: fit-content;
-    border: none; /* Agrega este estilo para quitar el borde del botón */
+    border: none;
 }
-
+                                   
 form {
     max-width: 400px;
     margin: 90px auto;
@@ -133,9 +136,9 @@ form {
 label {
     display: block;
     margin-bottom: 10px;
-    margin: 100;
-   
+    margin: 100;  
 }
+
 input, textarea {
     width: 100%;
     padding: 8px;
@@ -143,11 +146,13 @@ input, textarea {
     box-sizing: border-box;
     color: black;
 }
+
 input[type="submit"] {
     background-color: orange;
     color: white;
     cursor: pointer;
 }
+
 input[type="submit"]:hover {
     opacity: 0.7;;
 }
@@ -164,8 +169,7 @@ input[type="submit"]:hover {
 }
 
 
-
-/* Apartado sobre mí */
+                                        /* Apartado sobre mí */
 
 .main-text{
     margin: 200px auto;
@@ -179,7 +183,7 @@ input[type="submit"]:hover {
 }
 
 
-/* Apartado redes sociales */
+                                        /* Apartado redes sociales */
 
 #redes-sociales{
     background-color: #453d3d;
@@ -198,9 +202,7 @@ input[type="submit"]:hover {
 
 #redes-sociales a {
     color: white;
-    text-decoration: none;
-   
-    
+    text-decoration: none;  
 }
 
 #redes-sociales img{
@@ -212,7 +214,42 @@ input[type="submit"]:hover {
 }
 
 
-
+                                        /* Apartado Proyectos */
+#HTML {
+    overflow-y: auto;
+    max-height: 240px; 
+    width: 400px; 
+    border: 1.5px solid orange; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    position: relative;
+    bottom: -150px;
+    margin-right: 50%;
+    background-color: #453d3d;
+    border-top-left-radius:  4%;
+    border-bottom-left-radius: 4%;
+}
+    
+#CSS {
+    overflow-y: auto; 
+    max-height: 240px; 
+    width: 400px; 
+    border: 1.5px solid orange; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    position: relative;
+    bottom: 127px;
+    margin-left: 45%;
+    background-color: #453d3d;
+    border-top-left-radius:  4%;
+    border-bottom-left-radius: 4%;
+}
+    
+#HTML a, #CSS a{
+    color: grey;
+    text-decoration: none;
+    font-size: 13px;
+}
 
 /* Apartado pie de página */
 
