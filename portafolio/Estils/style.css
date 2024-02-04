@@ -77,6 +77,16 @@ section img {
     border-radius: 50%;
     z-index: -1;
 }
+
+.cv {
+    width: 70px;
+    height: 70px;
+}
+
+.cv1 {
+    position: relative;
+    margin-top: -100px;
+}
                                         /* Cuadro de competencias */
 
 section.skills {
