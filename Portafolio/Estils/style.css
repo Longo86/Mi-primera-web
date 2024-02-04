@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+                                        /* Barra de navegación */
+nav {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    position: fixed;
+    border: 1.5px solid orange;
+}
+
+.barra a {
+    color: orange;
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    width: 180px;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: font-size 0.3s ease; 
+    vertical-align: middle;
+}
+
+.barra a:hover {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+
+.contacto {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+                                        /* Foto + Presentación inicial WEB */
+.container {
+    max-width: 1200px;
+    margin: 100px auto; 
+    text-align: center;
+    color: white;
+}
+
+section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 20px;
+}
+
+section img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.circulo-naranja {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-65%, -50%);
+    width: 500px;
+    height: 350px;
+    background-color:orange;
+    border-radius: 50%;
+    z-index: -1;
+}
+                                        /* Cuadro de competencias */
+
+section.skills {
+    position: fixed;
+    top: 40%;
+    right: 0;
+    transform: translateX(300%) translateY(-25%);
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+section.skills h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section.skills meter {
+    width: 100%;
+}
+
+section.skills label {
+    display: flex;
+    align-items: center;
+}
+
+section.skills img {
+    margin-right: 8px;
+    max-width: 30px;
+    max-height: 30px; 
+}
+
+                                        /* Apartado Contacto */
+.cerrar-contacto {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+    border: none;
+}
+                                   
+form {
+    max-width: 400px;
+    margin: 90px auto;
+    color: white;
+    text-align: left;
+    margin-right: 300px;
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+    margin: 100;  
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    opacity: 0.7;;
+}
+
+.contacto2 {
+    text-align: left; 
+    color: white;
+    margin: 190px;
+    margin-left: 150px;
+}
+
+.contacto2 h2, strong{
+    color: orange;
+}
+
+
+                                        /* Apartado sobre mí */
+
+.main-text{
+    margin: 200px auto;
+    text-align: justify;
+    color: white;
+    width: 900px;
+    float: left;
+    font-style: italic;
+    position: fixed;
+    line-height: 1,6;
+}
+
+
+                                        /* Apartado redes sociales */
+
+#redes-sociales{
+    background-color: #453d3d;
+    width: 30%;
+    height: 30%;
+    text-align: left;
+    line-height: 2.5;
+    border-radius: 20px;
+    position: relative;
+    top: 130px;
+    left: 0px;
+    border: 1.5px solid orange;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#redes-sociales a {
+    color: white;
+    text-decoration: none;  
+}
+
+#redes-sociales img{
+    width: 45px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 20px; 
+    vertical-align: bottom;
+}
+
+
+                                        /* Apartado Proyectos */
+#HTML {
+    overflow-y: auto;
+    max-height: 240px; 
+    width: 400px; 
+    border: 1.5px solid orange; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    position: relative;
+    bottom: -150px;
+    margin-right: 50%;
+    background-color: #453d3d;
+    border-top-left-radius:  4%;
+    border-bottom-left-radius: 4%;
+}
+    
+#CSS {
+    overflow-y: auto; 
+    max-height: 240px; 
+    width: 400px; 
+    border: 1.5px solid orange; 
+    padding: 10px; 
+    box-sizing: border-box; 
+    position: relative;
+    bottom: 127px;
+    margin-left: 45%;
+    background-color: #453d3d;
+    border-top-left-radius:  4%;
+    border-bottom-left-radius: 4%;
+}
+    
+#HTML a, #CSS a{
+    color: grey;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+/* Apartado pie de página */
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 13px;
+    border: 1.5px solid orange;
+}

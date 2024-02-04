@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="/Portafolio/Estils/style.css">
+    <title>Stefano Longo | Programador</title>
+</head>
+<body>
+    <nav>
+        <div class="barra">
+            <a href="/Portafolio/index.html">⚡Inicio</a>
+            <a href="/Portafolio/sobre-mi.html">⚡Sobre mi</a>
+            <a href="/Portafolio/proyectos.html">⚡Proyectos</a>
+            <a href="/Portafolio/redes-sociales.html">⚡Redes Sociales</a>
+        </div>
+        <div>
+            <a href="/Portafolio/contacto.html">
+            <button for="cerrarContacto" class="contacto">Contacto</button>
+        </a>
+        </div>
+    </nav>
+
+    <section>
+<div class="contacto2">
+    <h2>Datos de contacto</h2>
+    <p><strong>Email:</strong>  slongo@inscaparrella.cat</p>
+    <p><strong>Teléfono:</strong>    603349614</p>
+    <p><strong>Dirección:</strong>   Av. Exercit nº 44 bis, 25194, Lleida</p>
+</div>
+    </section>
+    <h2></h2>
+    <form action="/enviar_formulario.php" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <footer>
+        <div>
+                Stefano Longo | 2024 All Rights Reserved. Privacy Policy
+        </div>
+    </footer>
+</body>
+
+</html>

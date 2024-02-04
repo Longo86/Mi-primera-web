@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documento</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    .sol-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .sol {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: rgba(255, 234, 0, 0.656);
+    }
+
+    .luna {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: rgb(102, 102, 105);
+      filter: opacity(0.5);
+      animation: lunarMovement 15s ease-in-out infinite;
+    }
+
+    @keyframes lunarMovement {
+      0%, 100% {
+        transform: translateX(340px);}
+      50% {
+        transform: translateX(-340px); 
+      }
+    } 
+  </style>
+</head>
+<body>
+  <div class="sol-container">
+    <div class="sol"></div>
+  </div>
+  <div class="luna"></div>
+</body>
+</html>
+
+
+
+
